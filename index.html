@@ -179,7 +179,16 @@
         <h1 id="在开始前"><a href="#在开始前" class="headerlink" title="在开始前"></a>在开始前</h1><p>感谢CodeSheep的B站博客视频，<a href="https://www.bilibili.com/video/av44544186/" target="_blank" rel="noopener">视频</a></p>
 <h1 id="前期需要加载的"><a href="#前期需要加载的" class="headerlink" title="前期需要加载的"></a>前期需要加载的</h1><h2 id="安装Node"><a href="#安装Node" class="headerlink" title="安装Node"></a>安装Node</h2><p><a href="https://nodejs.org" target="_blank" rel="noopener">Node官方网站</a><br><code>node -v;npm -v</code>来查看版本</p>
 <h2 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h2><p>加载主题和上传到github都要用到<br><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git官网</a></p>
-<h1 id="开始安装-Hexo"><a href="#开始安装-Hexo" class="headerlink" title="开始安装 Hexo"></a>开始安装 Hexo</h1><p>打开终端<br><code>sudo su</code><br>进入root用户，借助npm包管理器来安装，但镜像源在国外，这样速度很慢，安装cnpm 淘宝的镜像来提高速度，在终端输入<code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code>，<code>cnpm -v</code>来查看是否安装成功。<code>cnpm install -g hexo-cli</code>来安装hexo，安装好后，<code>hexo -v</code>来查看是否安装成功。<br>这样，hexo就安装完成了。<br><code>pwd</code>查看现在所在的目录，使用<code>mkdir blog</code>来在根目录建一个blog文件夹（也可以建别的名字的文件夹），hexo 命令必须在这个文件夹里运行。<br><code>sudo hexo init</code>来初始化一个博客</p>
+<h1 id="开始安装-Hexo"><a href="#开始安装-Hexo" class="headerlink" title="开始安装 Hexo"></a>开始安装 Hexo</h1><p>打开终端</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo su</span><br></pre></td></tr></table></figure>
+
+<p>进入root用户，借助npm包管理器来安装，但镜像源在国外，这样速度很慢，安装cnpm 淘宝的镜像来提高速度，在终端输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+
+<p><code>cnpm -v</code>来查看是否安装成功。<br>安装hexo</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>安装好后，<code>hexo -v</code>来查看是否安装成功。<br>这样，hexo就安装完成了。<br><code>pwd</code>查看现在所在的目录，使用<code>mkdir blog</code>来在根目录建一个blog文件夹（也可以建别的名字的文件夹），hexo 命令必须在这个文件夹里运行。<br><code>sudo hexo init</code>来初始化一个博客</p>
 <h1 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h1><p>(<code>)
 hexo clean #用来清理缓存文件，写完博客后运行
 hexo g #生成文件
